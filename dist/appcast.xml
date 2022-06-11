@@ -12,7 +12,7 @@
             <pubDate>Sun, 16 Feb 2022 12:00:00 +0800</pubDate>
             <enclosure length="0"
                 type="application/octet-stream"
-                url="1.0.0+1/test_app-1.0.0+1-windows-setup.exe" sparkle:dsaSignature="MDwCHChVD+ozgWdphiF42E/bJt1JLWEQbNRtjnnXdTMCHBLSEozormYzzl8nPVN+RVi+MY+xFTdd6sKTBgY=" sparkle:os="windows"
+                url="https://github.com/Bahrom2101/test_app/tree/master/dist/1.0.0+1/test_app-1.0.0+1-windows-setup.exe" sparkle:dsaSignature="MDwCHChVD+ozgWdphiF42E/bJt1JLWEQbNRtjnnXdTMCHBLSEozormYzzl8nPVN+RVi+MY+xFTdd6sKTBgY=" sparkle:os="windows"
                 sparkle:version="1.0.0" />
         </item>
     </channel>
