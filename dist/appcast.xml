@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.andymatuschak.org/xml-namespaces/sparkle ">
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>billz_cashier_desktop</title>
         <description>Most recent updates to billz_cashier_desktop</description>
@@ -13,8 +11,8 @@
             </sparkle:releaseNotesLink>
             <pubDate>Sun, 16 Feb 2022 12:00:00 +0800</pubDate>
             <enclosure length="0" type="application/octet-stream"
-                url="https://github.com/Bahrom2101/test_app/blob/master/dist/1.0.0%2B1/test_app-1.0.0%2B1-windows-setup.exe"
-                sparkle:dsaSignature="MD0CHQCPTWrjMcRrX/cmTij643K+T2Ign+UnsRZSBtE/AhxaiufKyux7fiRXub7ceLFTvC7Nqm5HnEZXx1f6"
+                url="1.0.0+1/test_app-1.0.0+1-windows-setup.exe"
+                sparkle:dsaSignature="MDwCHChVD+ozgWdphiF42E/bJt1JLWEQbNRtjnnXdTMCHBLSEozormYzzl8nPVN+RVi+MY+xFTdd6sKTBgY="
                 sparkle:os="windows" sparkle:version="1.0.0" />
         </item>
     </channel>
