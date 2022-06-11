@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.andymatuschak.org/xml-namespaces/sparkle ">
+    <channel>
+        <title>billz_cashier_desktop</title>
+        <description>Most recent updates to billz_cashier_desktop</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.0.0</title>
+            <sparkle:releaseNotesLink>
+                https://your_domain/your_path/release_notes.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Sun, 16 Feb 2022 12:00:00 +0800</pubDate>
+            <enclosure length="0" type="application/octet-stream"
+                url="1.0.0+1/billz_cashier_desktop-1.0.0+1-windows-setup.exe"
+                sparkle:dsaSignature="MEUCIQDbpjLSOZjrP34J2h3/yaXdWQA8K2fcVlB1hzN4woOALQIgOdPmFJ6zoVqrz9fyahlijCgHdbme/aVxyWa1XK0YXME="
+                sparkle:os="windows" sparkle:version="1.0.0" />
+        </item>
+    </channel>
+</rss>

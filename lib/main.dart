@@ -1,5 +1,4 @@
-import 'dart:isolate';
-
+import 'package:auto_updater/auto_updater.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,6 +30,20 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final String _feedURL = 'http://localhost:5002/appcast.xml';
+
+  void _handleClickSetFeedURL() async {
+    await autoUpdater.setFeedURL(_feedURL);
+  }
+
+  void _handleClickCheckForUpdates() async {
+    await autoUpdater.checkForUpdates();
+  }
+
+  void _handleClickCheckForUpdatesWithoutUI() async {
+    await autoUpdater.checkForUpdates(inBackground: true);
+  }
+
   @override
   void initState() {
     super.initState();
@@ -53,10 +66,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: ButtonStyle(
                     backgroundColor:
                         MaterialStateProperty.all<Color>(Colors.blue)),
-                onPressed: () {},
+                onPressed: () {
+                  _handleClickSetFeedURL();
+                },
                 child: const Center(
                     child: Text(
-                  'one',
+                  'handleClickSetFeedURL',
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 )),
               ),
@@ -69,10 +84,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: ButtonStyle(
                     backgroundColor:
                     MaterialStateProperty.all<Color>(Colors.blue)),
-                onPressed: () {},
+                onPressed: () {
+                  _handleClickCheckForUpdates();
+                },
                 child: const Center(
                     child: Text(
-                      'two',
+                      'handleClickCheckForUpdates',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     )),
               ),
@@ -85,10 +102,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: ButtonStyle(
                     backgroundColor:
                     MaterialStateProperty.all<Color>(Colors.blue)),
-                onPressed: () {},
+                onPressed: () {
+                  _handleClickCheckForUpdatesWithoutUI();
+                },
                 child: const Center(
                     child: Text(
-                      'three',
+                      'handleClickCheckForUpdatesWithoutUI',
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     )),
               ),
