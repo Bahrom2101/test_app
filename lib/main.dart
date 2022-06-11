@@ -1,7 +1,11 @@
 import 'package:auto_updater/auto_updater.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  String feedURL = 'https://github.com/Bahrom2101/test_app/blob/master/dist/appcast.xml';
+  await autoUpdater.setFeedURL(feedURL);
+  await autoUpdater.checkForUpdates();
   runApp(const MyApp());
 }
 
@@ -33,14 +37,17 @@ class _MyHomePageState extends State<MyHomePage> {
   final String _feedURL = 'https://github.com/Bahrom2101/test_app/blob/master/dist/appcast.xml';
 
   void _handleClickSetFeedURL() async {
+    print('set feed');
     await autoUpdater.setFeedURL(_feedURL);
   }
 
   void _handleClickCheckForUpdates() async {
+    print('check for updates');
     await autoUpdater.checkForUpdates();
   }
 
   void _handleClickCheckForUpdatesWithoutUI() async {
+    print('check for updates without ui');
     await autoUpdater.checkForUpdates(inBackground: true);
   }
 
