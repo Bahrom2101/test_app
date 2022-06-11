@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final String _feedURL = 'http://localhost:5002/appcast.xml';
+  final String _feedURL = 'https://github.com/Bahrom2101/test_app/blob/master/dist/appcast.xml';
 
   void _handleClickSetFeedURL() async {
     await autoUpdater.setFeedURL(_feedURL);
