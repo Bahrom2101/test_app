@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>billz_cashier_desktop</title>
-        <description>Most recent updates to billz_cashier_desktop</description>
+        <title>auto_updater_example</title>
+        <description>Most recent updates to auto_updater_example</description>
         <language>en</language>
+        <item>
+            <title>Version 1.1.0</title>
+            <sparkle:releaseNotesLink>
+                https://your_domain/your_path/release_notes.html
+            </sparkle:releaseNotesLink>
+            <pubDate>Sun, 16 Feb 2022 12:00:00 +0800</pubDate>
+            <enclosure length="13400992"
+                type="application/octet-stream"
+                url="1.1.0+2/auto_updater_example-1.1.0+2-macos.zip" sparkle:edSignature="pbdyPt92pnPkzLfQ7BhS9hbjcV9/ndkzSIlWjFQIUMcaCNbAFO2fzl0tISMNJApG2POTkZY0/kJQ2yZYOSVgAA==" sparkle:os="macos"
+                sparkle:version="1.1.0" />
+        </item>
         <item>
             <title>Version 1.0.0</title>
             <sparkle:releaseNotesLink>
                 https://your_domain/your_path/release_notes.html
             </sparkle:releaseNotesLink>
             <pubDate>Sun, 16 Feb 2022 12:00:00 +0800</pubDate>
-            <enclosure length="0" type="application/octet-stream"
-                url="1.0.0+1/test_app-1.0.0+1-windows-setup.exe"
-                sparkle:dsaSignature="MDwCHChVD+ozgWdphiF42E/bJt1JLWEQbNRtjnnXdTMCHBLSEozormYzzl8nPVN+RVi+MY+xFTdd6sKTBgY="
-                sparkle:os="windows" sparkle:version="1.0.0" />
+            <enclosure length="0"
+                type="application/octet-stream"
+                url="1.0.0+1/test_app-1.0.0+1-windows-setup.exe" sparkle:dsaSignature="MDwCHChVD+ozgWdphiF42E/bJt1JLWEQbNRtjnnXdTMCHBLSEozormYzzl8nPVN+RVi+MY+xFTdd6sKTBgY=" sparkle:os="windows"
+                sparkle:version="1.0.0" />
         </item>
     </channel>
 </rss>
